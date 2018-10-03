@@ -1,0 +1,2 @@
+# apt-get install deb-multimedia-keyring
+deb http://www.deb-multimedia.org buster main non-free

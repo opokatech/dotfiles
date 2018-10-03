@@ -1,0 +1,4 @@
+# sudo wget -O - http://www.bchemnet.com/suldr/suldr.gpg | sudo apt-key add -
+# apt-get install suldr-keyring
+deb http://www.bchemnet.com/suldr/ debian extra
+

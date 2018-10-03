@@ -88,8 +88,8 @@ autocmd BufNewFile,BufRead *.less set filetype=less
 " Ino files are in c or cpp.
 autocmd BufNewFile,BufRead *.ino set filetype=cpp
 
-" Special settings for javascript and php
-autocmd FileType javascript,php setlocal tabstop=2 shiftwidth=2
+" Special tabstop and shiftwidth for some files
+autocmd FileType javascript,php,html,css,scss setlocal tabstop=2 shiftwidth=2
 
 " In make we use real tabs
 autocmd FileType make set noexpandtab
@@ -101,3 +101,12 @@ let g:javascript_plugin_jsdoc = 1
 
 " YouCompleteMe options 
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+" clang-format bindings
+" map <C-I> :pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
+" imap <C-I> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
+map <C-K> :pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
+imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
+
+" For matching html tags with %
+packadd! matchit

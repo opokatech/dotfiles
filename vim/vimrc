@@ -44,7 +44,7 @@ set ignorecase
 set shiftwidth=4
 set tabstop=4
 set textwidth=120
-set visualbell
+set novisualbell
 
 set fileencodings=ucs-bom,utf8
 set fileencoding=utf-8

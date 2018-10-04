@@ -89,7 +89,7 @@ autocmd BufNewFile,BufRead *.less set filetype=less
 autocmd BufNewFile,BufRead *.ino set filetype=cpp
 
 " Special tabstop and shiftwidth for some files
-autocmd FileType javascript,php,html,css,scss setlocal tabstop=2 shiftwidth=2
+autocmd FileType javascript,php,html,htmldjango,css,scss setlocal tabstop=2 shiftwidth=2
 
 " In make we use real tabs
 autocmd FileType make set noexpandtab

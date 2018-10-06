@@ -2,4 +2,4 @@
 # deb https://download.sublimetext.com/ apt/dev/
 
 # for evaluation:
-deb https://download.sublimetext.com/ apt/stable/
+# deb https://download.sublimetext.com/ apt/stable/

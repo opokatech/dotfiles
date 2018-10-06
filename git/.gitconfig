@@ -1,0 +1,43 @@
+# inspired by
+# https://github.com/mlongob/dotfiles/blob/master/gitconfig
+[user]
+    name = NAME_SURNAME
+    email = EMAIL
+
+[diff]
+    tool = meld
+
+[difftool]
+    prompt = false
+
+[mergetool]
+    keepBackup = false
+
+[core]
+    editor = vim
+    autocrlf = input
+
+[color]
+    ui = auto
+
+[alias]
+    lg = log --graph --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) -%C(bold red) %an%C(reset)'
+    lga = "!git lg --all"
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%an]" --decorate
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%an]" --decorate --name-status
+
+    br = branch
+    st = status
+    sub = submodule update --init --recursive
+    pru = remote prune origin
+
+[merge]
+    renamelimit = 20000
+
+[push]
+    default = upstream
+
+[pretty]
+    line = "%C(auto)%h%d %s %C(yellow)by %C(blue)%an %C(green)%ar"
+    compact = "%C(auto)%h %s %C(green)%ar%n %C(auto)%d%n"
+    detail = "%C(auto)%h %s%n  %C(yellow)by %C(blue)%an %C(magenta)<%ae> [%G?] %C(green)%ar%n %C(auto)%d%n"

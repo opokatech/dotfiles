@@ -1,0 +1,13 @@
+# local git
+host git-rpi
+    user gitolite3
+    hostname rpi1
+    port 22
+
+# remote
+host github
+    user git
+    hostname github.com
+    port 22
+    identityfile ~/.ssh/id_rsa_github
+

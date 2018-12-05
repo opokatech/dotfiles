@@ -28,6 +28,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
+Plugin 'Chiel92/vim-autoformat'
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -72,6 +73,9 @@ map <F8> =<ESC>:tnext<CR>
 " For easy copying with mouse
 set pastetoggle=<F9>
 
+" Autoformatting
+map <S-F11> :Autoformat<CR>
+
 " Applying YouCompleteMe FixIt
 map <F12> :YcmCompleter FixIt<CR>
 map <S-F12> :%s/\s\+$//e<CR>
@@ -88,7 +92,7 @@ autocmd BufNewFile,BufRead *.less set filetype=less
 " Ino files are in c or cpp.
 autocmd BufNewFile,BufRead *.ino set filetype=cpp
 
-" Special tabstop and shiftwidth for some files
+" Special settings for javascript, php and html
 autocmd FileType javascript,php,html,htmldjango,css,scss setlocal tabstop=2 shiftwidth=2
 
 " In make we use real tabs
@@ -99,7 +103,7 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 " vim-javascript config
 let g:javascript_plugin_jsdoc = 1
 
-" YouCompleteMe options 
+" YouCompleteMe options
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 " clang-format bindings
@@ -108,5 +112,5 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 map <C-K> :pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
 imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
 
-" For matching html tags with %
+" For matching html tags and other too
 packadd! matchit

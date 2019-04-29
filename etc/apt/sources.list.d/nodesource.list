@@ -1,1 +1,2 @@
-deb https://deb.nodesource.com/node_8.x buster main
+# curl --silent https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
+deb [arch=i386,amd64] https://deb.nodesource.com/node_8.x buster main

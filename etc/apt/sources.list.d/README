@@ -2,10 +2,6 @@ For some repositories you need to install keys first.
 How to do this is in this file.
 Some repositories require also apt-transport-https.
 
-* deb-multimedia
-wget https://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
-sudo gdebi deb-multimedia-keyring_2016.8.1_all.deb
-
 * docker
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 
@@ -15,6 +11,10 @@ sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1C61A2656FB57B7E4DE0F4C1FC9
 * google 
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 
+* multimedia
+wget https://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
+sudo gdebi deb-multimedia-keyring_2016.8.1_all.deb
+
 * nodesource
 curl --silent https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
 
@@ -23,10 +23,6 @@ wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
 
 * skype
 curl https://repo.skype.com/data/SKYPE-GPG-KEY | sudo apt-key add - 
-
-* suldr
-wget http://www.bchemnet.com/suldr/pool/debian/extra/su/suldr-keyring_2_all.deb
-sudo gdebi suldr-keyring_2_all.deb
 
 * teamviewer
 wget -O - https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc | apt-key add -

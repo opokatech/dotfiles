@@ -29,6 +29,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Chiel92/vim-autoformat'
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -65,6 +67,10 @@ map <F4> =<ESC>:next<CR>
 " Moving between errors/warnings after calling make from vim (not !make, but make)
 map <F5> =<ESC>:cprevious<CR>
 map <F6> =<ESC>:cnext<CR>
+
+" Moving between locations
+map <S-F5> =<ESC>:lprevious<CR>
+map <S-F6> =<ESC>:lnext<CR>
 
 " Moving between found tags
 map <F7> =<ESC>:tprevious<CR>
@@ -105,6 +111,10 @@ let g:javascript_plugin_jsdoc = 1
 
 " YouCompleteMe options
 let g:ycm_autoclose_preview_window_after_completion = 1
+" allow loading .ycm_extra_conf.py from home directory only
+let g:ycm_extra_conf_globlist = ['~/*']
+" it will populate vims location list with new diagnostic data
+let g:ycm_always_populate_location_list = 1
 
 " clang-format bindings
 " map <C-I> :pyf /usr/share/vim/addons/syntax/clang-format.py<cr>

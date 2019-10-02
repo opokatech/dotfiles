@@ -63,10 +63,11 @@ else
 fi
 unset color_prompt force_color_prompt
 
-# If this is an xterm set the title to user@host:dir
+# If this is an xterm set the title of terminal
+# it is ESC]0;stringBEL, so "ESC]0;" + some string + BEL(\a)
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="\[\e]0;\W\a$PS1"
     ;;
 *)
     ;;
@@ -118,5 +119,7 @@ GPG_TTY=$(tty)
 
 # some preferences
 export EDITOR=vim
-export MAKEFLAGS=-j4
 
+if [ -f ~/.bash_local ]; then
+    . ~/.bash_local
+fi

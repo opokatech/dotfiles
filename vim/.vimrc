@@ -87,7 +87,7 @@ map <F12> :YcmCompleter FixIt<CR>
 map <S-F12> :%s/\s\+$//e<CR>
 
 " For some files remove trailing space at save
-autocmd FileType python,css,less,sass,javascript,c,tex autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType python,css,less,sass,javascript,tex autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Use english spelling for latex
 autocmd FileType tex set spelllang=en_gb spell

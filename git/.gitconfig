@@ -36,6 +36,7 @@
 
 [push]
     default = upstream
+    followTags = true # git push automatically sends annotated tags and does not sends lightweight tags
 
 [pretty]
     line = "%C(auto)%h%d %s %C(yellow)by %C(blue)%an %C(green)%ar"

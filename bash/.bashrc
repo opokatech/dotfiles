@@ -114,6 +114,10 @@ PATH="$PATH:$HOME/bin:$HOME/.local/bin"
 # don't beep
 xset b off >/dev/null 2>&1
 
+# don't escape "$" when pressing TAB. This allows typing $SOME_DIR/ [TAB] and get $SOME_DIR expanded
+# instead of escaping "$" and making searching in $SOME_DIR via TAB impossible
+shopt -s direxpand
+
 # for GPG
 GPG_TTY=$(tty)
 

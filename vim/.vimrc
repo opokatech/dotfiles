@@ -29,6 +29,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'vim-airline/vim-airline'
 "Plugin 'godlygeek/tabular'
 "Plugin 'plasticboy/vim-markdown'
 
@@ -41,7 +42,7 @@ syntax on
 
 set expandtab
 set incsearch
-set number
+set nonumber
 set showcmd
 set ignorecase
 set shiftwidth=4
@@ -115,6 +116,14 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_extra_conf_globlist = ['~/*']
 " it will populate vims location list with new diagnostic data
 let g:ycm_always_populate_location_list = 1
+" allow rename in many files and don't add headers when typing
+let g:ycm_clangd_args = ['--cross-file-rename', '--header-insertion=never', '--log=verbose', '--limit-results=0']
+" Let clangd fully control code completion
+let g:ycm_clangd_uses_ycmd_caching = 0
+
+" shortcuts
+nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
+nnoremap <silent> <leader>gr :YcmCompleter GoToReferences<CR>
 
 " clang-format bindings
 " map <C-I> :pyf /usr/share/vim/addons/syntax/clang-format.py<cr>

@@ -124,6 +124,9 @@ GPG_TTY=$(tty)
 # some preferences
 export EDITOR=vim
 
+# Set ignoring whitespaces for gitg
+# gsettings set org.gnome.gitg.preferences.diff ignore-whitespace true
+
 if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi

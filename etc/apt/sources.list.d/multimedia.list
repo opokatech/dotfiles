@@ -1,3 +1,3 @@
 # wget https://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
 # sudo gdebi deb-multimedia-keyring_2016.8.1_all.deb
-deb [arch=amd64] http://www.deb-multimedia.org buster main non-free
+deb [arch=amd64] http://www.deb-multimedia.org bookworm main non-free

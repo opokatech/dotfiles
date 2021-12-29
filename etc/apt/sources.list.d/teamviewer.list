@@ -16,7 +16,7 @@
 ###       teamviewer repo development    - additionally, make the latest development packages available
 
 
-deb http://linux.teamviewer.com/deb stable main
+deb https://linux.teamviewer.com/deb stable main
 
-# deb http://linux.teamviewer.com/deb preview main
-# deb http://linux.teamviewer.com/deb development main
+# deb https://linux.teamviewer.com/deb preview main
+# deb https://linux.teamviewer.com/deb development main

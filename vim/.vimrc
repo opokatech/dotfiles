@@ -47,7 +47,7 @@ set showcmd
 set ignorecase
 set shiftwidth=4
 set tabstop=4
-set textwidth=120
+set textwidth=100
 set novisualbell
 
 set fileencodings=ucs-bom,utf8

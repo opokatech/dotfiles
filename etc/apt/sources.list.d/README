@@ -1,28 +1,26 @@
-For some repositories you need to install keys first.
-How to do this is in this file.
-Some repositories require also apt-transport-https.
+For non-standard repositories you need to install keys first.
+
+One way to do it is to download keys into /etc/apt/trusted.gpg.d directory saving them with asc
+(armored ascii) or gpg (binary) extension.
+
+Another way is to download the keys, save them in /etc/apt/keyrings directory and point to them
+using signed-by directive in the .list file.
 
 * docker
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-
-* dropbox
-sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
+curl -fsSL https://download.docker.com/linux/debian/gpg
 
 * google 
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub
 
 * multimedia
 wget https://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
 sudo gdebi deb-multimedia-keyring_2016.8.1_all.deb
 
 * nodesource
-curl --silent https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
-
-* opera
-wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
+curl --silent https://deb.nodesource.com/gpgkey/nodesource.gpg.key
 
 * skype
-curl https://repo.skype.com/data/SKYPE-GPG-KEY | sudo apt-key add - 
+curl https://repo.skype.com/data/SKYPE-GPG-KEY
 
 * teamviewer
-wget -O - https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc | apt-key add -
+wget -O - https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc

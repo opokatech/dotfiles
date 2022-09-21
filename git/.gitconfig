@@ -25,6 +25,7 @@
     lga = "!git lg --all"
     ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%an]" --decorate
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%an]" --decorate --name-status
+    last = log -1
 
     br = branch
     st = status

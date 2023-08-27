@@ -24,3 +24,6 @@ curl https://repo.skype.com/data/SKYPE-GPG-KEY
 
 * teamviewer
 wget -O - https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc
+
+* vs code, edge
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg

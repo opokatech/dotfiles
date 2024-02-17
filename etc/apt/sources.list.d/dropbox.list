@@ -1,1 +1,1 @@
-deb [arch=i386,amd64] https://linux.dropbox.com/debian sid main
+deb [arch=amd64 signed-by=/etc/apt/keyrings/dropbox.asc] http://linux.dropbox.com/debian trixie main

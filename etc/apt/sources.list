@@ -1,8 +1,8 @@
-# for libpx6 used by virtualbox-6.1
-deb http://ftp.debian.org/debian/ bullseye main non-free contrib
+# trixie
+deb http://deb.debian.org/debian/ testing main contrib non-free non-free-firmware
+deb http://security.debian.org/debian-security testing-security main contrib non-free
+deb http://deb.debian.org/debian/ testing-updates main contrib non-free
 
-# main
-deb http://ftp.debian.org/debian/ bookworm main non-free contrib
-deb http://ftp.debian.org/debian/ bookworm-updates main non-free contrib
-deb http://ftp.debian.org/debian/ bookworm-backports main non-free contrib
+# for some old stuff - bookworm
+deb http://deb.debian.org/debian/ stable main contrib non-free
 

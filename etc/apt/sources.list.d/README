@@ -12,16 +12,6 @@ curl -fsSL https://download.docker.com/linux/debian/gpg
 * google 
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub
 
-* multimedia
-wget https://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
-sudo gdebi deb-multimedia-keyring_2016.8.1_all.deb
-
-* nodesource
-curl --silent https://deb.nodesource.com/gpgkey/nodesource.gpg.key
-
-* skype
-curl https://repo.skype.com/data/SKYPE-GPG-KEY
-
 * teamviewer
 wget -O - https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc
 

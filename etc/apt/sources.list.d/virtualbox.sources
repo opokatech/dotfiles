@@ -1,0 +1,6 @@
+Types: deb
+URIs: http://download.virtualbox.org/virtualbox/debian/
+Suites: bookworm
+Components: contrib
+Architectures: amd64
+Signed-By: /etc/apt/trusted.gpg.d/virtualbox.asc

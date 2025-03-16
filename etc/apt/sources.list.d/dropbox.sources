@@ -1,0 +1,5 @@
+Types: deb
+URIs: http://linux.dropbox.com/debian/
+Suites: trixie
+Components: main
+Signed-By: /etc/apt/trusted.gpg.d/dropbox.asc

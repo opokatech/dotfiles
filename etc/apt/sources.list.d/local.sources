@@ -1,0 +1,6 @@
+Types: deb
+URIs: file:/home/mo/opt/debian/
+Suites: stable/
+# Components:
+Architectures: amd64
+Trusted: yes

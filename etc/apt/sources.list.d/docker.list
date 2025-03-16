@@ -1,4 +1,0 @@
-# curl -fsSL https://download.docker.com/linux/debian/gpg > /etc/apt/trusted.gpg.d/docker.asc
-
-deb [arch=amd64] https://download.docker.com/linux/debian bookworm stable
-

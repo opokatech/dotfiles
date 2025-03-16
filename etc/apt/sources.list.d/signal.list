@@ -1,2 +1,0 @@
-# wget -O- https://updates.signal.org/desktop/apt/keys.asc > /etc/apt/trusted.gpg.d/signal.asc
-deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main

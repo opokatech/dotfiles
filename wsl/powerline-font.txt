@@ -1,0 +1,6 @@
+Powerline font (to see git symbols) in WSL:
+
+- download the cascadia code: https://github.com/microsoft/cascadia-code/releases and
+extract files and find CascadiaMonoPL.ttf (or use the same file from here)
+- righ-click on the file, show more options, install for all users
+- select Cascadia Mono PL as setting for the WSL

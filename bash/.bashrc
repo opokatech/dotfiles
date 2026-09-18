@@ -130,3 +130,9 @@ export EDITOR=vim
 if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
+
+# Local config is here: ~/.config/powerline/
+if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]
+then
+    . /usr/share/powerline/bindings/bash/powerline.sh 
+fi
